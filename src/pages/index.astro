@@ -112,6 +112,24 @@ body {
   max-width: 100%; 
   flex-shrink: 1;
 }
+.textocentral {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: left;
+}
+.textocentralresaltado {
+	width: fit-content;
+	margin: 0 auto;
+	text-align: left;
+	background-color: #D6C27A;
+	border: 7px solid #1F444F; 
+	font-size: 1.3em; 
+	padding-left: 30px;
+	padding-right: 30px;
+	   }
+.palabra-resaltada {
+color: #9C1F00;
+}
 
 	</style>	
 	</head>
@@ -119,8 +137,20 @@ body {
 		<div class="cuadro h1">
 			<h1 style="color: #BDAE17;">secretos del micelio</h1>
 		</div>
+		<div class="textocentral">
 		<p style="text-align: center;"><strong>Experiencia de la vida natural y sus formas ᛯ</strong></p>
-		<p style="text-align: center;">Hago arte por el camino</p> 
+		<p style="text-align: center;">Hago arte por el camino</p>
+		 <p>Página web autogestionada por mí mismo con tutoriales de youtube, estoy aprendiendo a programar esta
+			cosa desde 0. <br> La usaré para subir arte, divulgación científica, divulgación no tan científica y lo que me parezca, o no, que merece ser compartido. <br>
+			Esto es un mecanismo para escapar de las garras de instagram que odia las imágenes con densidad de pixel.
+		 </p>
+		 </div>
+		 <div class="textocentralresaltado">
+		 <p>
+			Bienvenidas a todas las personas humanas y/o no humanas,<br> <span class="palabra-resaltada"><strong>WARNING</strong></span>: NO se requiere tener núcleo eucariota para acceder a esta página web. <br>Se permite el libre tránsito del ARNm
+		 </p>
+		 </div>
+		 
 		<img src={`${import.meta.env.BASE_URL}imagenes/YnoVaNadie.jpg`} alt="Y si hacen una Guerra y no Va Nadie" class="foto-ynovanadie"/>
 	<div class="micólogo">
 	<img src={`${import.meta.env.BASE_URL}imagenes/micologo2.0.png`} alt="1" class="fotos2"/>

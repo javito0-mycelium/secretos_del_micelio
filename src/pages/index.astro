@@ -18,6 +18,10 @@
 
   h1 {
     font-family: 'epistolar', sans-serif !important;
+	font-size: 6rem
+  }
+   h2 {
+    font-family: 'epistolar', sans-serif !important;
 	font-size: 2rem
   }
   p {
@@ -44,10 +48,9 @@ body {
 	}
 .galería {
   display: flex;
-  flex-wrap: wrap; /* Permite que las imágenes se ajusten a la siguiente línea si no caben en una sola */
+  flex-wrap: nowrap; /* Permite que las imágenes se ajusten a la siguiente línea si no caben en una sola */
   justify-content: flex-start; 
-  gap: 0px; /* Espacio entre las imágenes */
-  margin-top: 20px; /* Espacio arriba de la galería */
+  gap: 2px; /* Espacio entre las imágenes */
 }
 .cuadro h1 {
       width: 2570px;
@@ -57,7 +60,18 @@ body {
       justify-content: center; /* Centra el texto horizontalmente dentro del cuadro */
       align-items: center;    /* Centra el texto verticalmente dentro del cuadro */
       text-align: center;
-	   border: 5px solid #1F444F; /* Borde blanco de 4 píxeles de grosor */
+	   border: 7px solid #1F444F; /* Borde blanco de 4 píxeles de grosor */
+	   font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+    }
+.cuadro h2 {
+      width: 2570px;
+      height: 60px;
+      background-color: #403626;
+      display: flex;
+      justify-content: center; /* Centra el texto horizontalmente dentro del cuadro */
+      align-items: center;    /* Centra el texto verticalmente dentro del cuadro */
+      text-align: center;
+	   border: 12px solid #5A5AD1; /* Borde blanco de 4 píxeles de grosor */
 	   font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
     }
 .foto-ynovanadie {
@@ -93,7 +107,7 @@ body {
   flex-direction: row; /* Este es el valor por defecto: de izquierda a derecha */
   justify-content: flex-start; /* Alinea los elementos al inicio (izquierda) */
   align-items: center; 
-  gap: 5px; /* Espacio opcional entre los elementos */
+  gap: 2px; /* Espacio opcional entre los elementos */
   flex-wrap: nowrap; 
   max-width: 100%; 
   flex-shrink: 1;
@@ -152,12 +166,15 @@ se nutría de luces.
 
 </div>
 <br>
-<h1 style="color: #BDAE17;">El sol quemando el agua</h1>
+<div class="cuadro h2">
+	<h2 style="color: #BDAE17;">El sol quemando el agua</h2>
+</div>
 <br>
 <div class="galería">
-<br>
 	<img src={`${import.meta.env.BASE_URL}imagenes/oro.JPG`} alt="1" class="fotos"/>
 	<img src={`${import.meta.env.BASE_URL}imagenes/caballo.JPG`} alt="3" class="fotos"/>
+</div>
+<div class="galería">
 	<img src={`${import.meta.env.BASE_URL}imagenes/roca.JPG`} alt="2" class="fotos"/>
 	<img src={`${import.meta.env.BASE_URL}imagenes/IMG_1596.JPG`} alt="4" class="fotos"/>
 </div>

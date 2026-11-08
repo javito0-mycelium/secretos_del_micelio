@@ -1,0 +1,20 @@
+{
+  "name": "secretosd_el_micelio",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@fontsource/libre-barcode-128-text": "^5.3.0",
+    "@fontsource/silkscreen": "^5.3.0",
+    "@fontsource/syne-mono": "^5.3.0",
+    "astro": "^7.4.7"
+  }
+}

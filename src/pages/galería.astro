@@ -1,0 +1,118 @@
+---
+// src/pages/galería.astro
+---
+<style is:global>
+  @font-face {
+    font-family: 'epistolar';
+    src: url('../fuentes/Epistolar.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'regular';
+    src: url('../fuentes/Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
+    font-family: 'epistolar', sans-serif !important;
+	font-size: 6rem
+  }
+   h2 {
+    font-family: 'epistolar', sans-serif !important;
+	font-size: 2rem
+  }
+  p {
+	font-family: 'regular', sans-serif !important;
+  }
+   h3 {
+    font-family: 'epistolar', sans-serif !important;
+	font-size: 1.3rem
+  }
+</style>
+
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/eeeeeoooooo.svg" />
+		<link rel="icon" href="/eeeeeoooooo.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>secretos del micelio</title>
+	<style>
+body {
+	background-color: #3B4F3B;
+	margin: 0;
+	display: flex;
+	flex-direction: column; /* Alinea los elementos uno debajo de otro */
+	align-items: center;    /* Centra todos los elementos horizontalmente */
+	padding-top: 40px;       /* Opcional: da espacio arriba si lo deseas */
+	}
+.galeria-de-imagenes {
+  
+	display: flex;
+	flex-wrap: nowrap; /* Permite que las imágenes se ajusten a la siguiente línea si no caben en una sola */
+	justify-content: flex-start; 
+	gap: 2px; /* Espacio entre las imágenes */
+}
+.cuadro-h1-galeria {
+      width: 2570px;
+      height: 100px;
+      background-color: #efc612;
+      display: flex;
+      justify-content: center; /* Centra el texto horizontalmente dentro del cuadro */
+      align-items: center;    /* Centra el texto verticalmente dentro del cuadro */
+      text-align: center;
+	   border: 7px solid #abbabe; /* Borde blanco de 4 píxeles de grosor */
+	   font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+	   margin-top: 10px;
+	   padding-top: 20px;
+    }
+.cuadro-h2-galeria {
+      width: fit-content;
+      height: auto;
+      background-color: #403626;
+      display: flex;
+      justify-content: center; /* Centra el texto horizontalmente dentro del cuadro */
+      align-items: center;    /* Centra el texto verticalmente dentro del cuadro */
+      text-align: center;
+	   border: 12px solid #5A5AD1; /* Borde blanco de 4 píxeles de grosor */
+	   font-size: 2em; /* Ajusta el tamaño de la fuente según tus necesidades */
+	   margin-top: 20px;
+	   padding-left: 70px;
+	   padding-right: 70px;
+    }
+.fotos {
+	  width: 700px; /* Ajusta el ancho según tus necesidades */
+	  height: auto; /* Mantiene la proporción de la imagen */
+	  display: block; /* Asegura que la imagen se comporte como un bloque */
+}
+
+
+</style>	
+</head>
+<body >
+	<nav>
+    	<a href="/">Volver al INICIO</a>
+	</nav>
+	<div class="cuadro-h1-galeria">
+		<h1 style="color: #1a1800;">Galería</h1>
+	</div>
+	<div class="cuadro-h2-galeria">
+	<h2 style="color: #BDAE17;">El sol quemando el agua</h2>
+	</div>
+	<div class="galeria-de-imagenes">
+	<img src={`${import.meta.env.BASE_URL}imagenes/oro.JPG`} alt="1" class="fotos"/>
+	<img src={`${import.meta.env.BASE_URL}imagenes/caballo.JPG`} alt="3" class="fotos"/>
+</div>
+<div class="galeria-de-imagenes">
+	<img src={`${import.meta.env.BASE_URL}imagenes/roca.JPG`} alt="2" class="fotos"/>
+	<img src={`${import.meta.env.BASE_URL}imagenes/IMG_1596.JPG`} alt="4" class="fotos"/>
+</div>
+	
+	</body>
+	
+</html>

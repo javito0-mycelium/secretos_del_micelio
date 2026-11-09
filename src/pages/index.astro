@@ -123,10 +123,12 @@ body {
   flex-shrink: 1;
 }
 .textocentral {
-	width: fit-content;
-	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: left;
-	 flex-direction: column;
+	max-width: 800px; /* Ajusta este valor según lo estrecho o ancho que lo prefieras (ej. 500px, 700px) */
+	margin: 0 auto;   /* Esto asegura que el bloque en sí también se centre en la página */
 }
 .textocentralresaltado {
 	width: fit-content;
@@ -195,6 +197,15 @@ margin-left: 100px;
   width: 100%; /* Ocupa todo el ancho del recuadro morado para poder centrar */
   margin-top: 6px; /* Separación respecto al video de arriba */
 }
+.logo-individual {
+  margin-top: 20px;
+	display: block;       /* Convierte la imagen en elemento de bloque para que funcionen los márgenes */
+  margin-left: auto;    /* Empuja la imagen desde la izquierda */
+  margin-right: auto;   /* Empuja la imagen desde la derecha (junto con el anterior, la centra) */
+  width: 150px;         /* Ajusta este valor al tamaño que desees (puedes usar px, %, rem, etc.) */
+  height: auto;         /* Mantiene la proporción original para que no se deforme */
+}
+
 
 
 	</style>	
@@ -203,23 +214,26 @@ margin-left: 100px;
 		<div class="cuadro h1">
 			<h1 style="color: #BDAE17;">secretos del micelio</h1>
 		</div>
+		
 		<div class="textocentral">
-		<p style="text-align: center;"><strong>Experiencia de la vida natural y sus formas ᛯ</strong></p>
-		<p style="text-align: center;">Hago arte por el camino</p>
-		 <p>Página web autogestionada por mí mismo con tutoriales de youtube, estoy aprendiendo a programar esta
+			<p><strong>Experiencia de la vida natural y sus formas ᛯ</strong></p>
+			<p>Hago arte por el camino</p>
+			<p>Página web autogestionada por mí mismo con tutoriales de youtube, estoy aprendiendo a programar esta
 			cosa desde 0. La usaré para subir arte, divulgación científica, divulgación no tan científica y lo que me parezca, o no, que merece ser compartido.
 			Esto es un mecanismo para escapar de las garras de instagram que odia las imágenes con densidad de pixel.
 			Por ahora no sé hacer más subpáginas dentro de esta web. Tiempo al tiempo :)
-		 </p>
-		 </div>
-		 <div class="textocentralresaltado">
-		 <p>
+			</p> 
+		</div>
+			
+		<div class="textocentralresaltado">
+			<p>
 			Bienvenidas a todas las personas humanas y/o no humanas.<br> <span class="palabra-resaltada"><strong>WARNING</strong></span>: NO se requiere tener núcleo eucariota para acceder a esta página web. <br>Se permite el libre tránsito del ARNm
-		 </p>
-		 </div>
+		 	</p>
+		</div>
 		 
-		<div style="position: absolute; top: 400px; left: 30px; z-index: 100; background-color: #9ced70; border: 3px solid #852e71; padding: 10px;">
-  			<h3 style="color: #112c1d;">Enlaces guays</h3>
+		<div style="position: absolute; top: 300px; left: 30px; z-index: 100; background-color: #9ced70; border: 3px solid #852e71; padding: 10px;">
+  			<img src={`${import.meta.env.BASE_URL}imagenes/Logo.png`} alt="2" class="logo-individual"/> 
+			<h3 style="color: #112c1d;">Enlaces guays</h3>
 			<a href="https://www.youtube.com/watch?v=QEG6gpOAkQg">Nidos de aves en directo</a><br>
 			<a href="https://www.youtube.com/@watop_esp">WATOP youtube</a><br>
 			<a href="https://science.nasa.gov/mission/hubble/">Telescopio Hubble NASA</a><br>

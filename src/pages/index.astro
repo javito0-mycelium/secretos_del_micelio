@@ -99,6 +99,12 @@ body {
 	  display: block; /* Asegura que la imagen se comporte como un bloque */
 	  margin: 0px auto; /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
 }
+.fotos-laurie-anderson {
+	  width: 300px; /* Ajusta el ancho según tus necesidades */
+	  height: auto; /* Mantiene la proporción de la imagen */
+	  display: block; /* Asegura que la imagen se comporte como un bloque */
+	  margin: 0px auto; /* Centra la imagen horizontalmente y agrega espacio arriba y abajo */
+	}
 .micólogo {
   font-family: 'regular', sans-serif;
   font-size: 1.5em; /* Ajusta el tamaño de la fuente según tus necesidades */
@@ -130,6 +136,61 @@ body {
 .palabra-resaltada {
 color: #9C1F00;
 }
+.palabra-resaltada2 {
+color: #ffd1b8;
+font-size: 1.5em;
+}
+
+.laurieanderson {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: fit-content;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.2em; 
+	background-color: #605890;
+	border: 2px solid #a91c1c; 
+	text-align: center; 
+margin-left: 100px;
+ margin-top: 20px;
+}
+.laurieanderson2 {
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: fit-content;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 1.2em; 
+	background-color: #605890;
+	border: 2px solid #a91c1c; 
+	text-align: center; 
+margin-left: 100px;
+ margin-top: 20px;
+}
+.contenedor-paralelo {
+   justify-content: flex-start;
+	display: flex;
+  flex-direction: row; /* Coloca los hijos uno al lado del otro */
+  width: 100%;
+  align-items: flex-start; /* Alinea ambos arriba */
+  margin-top: 5px; /* Espacio respecto al cuadro amarillo */
+  gap: 5px;
+}
+
+.fila-imagenes {
+ display: flex;
+  flex-direction: row; /* Las coloca una al lado de la otra */
+  justify-content: center; /* Las centra juntas en medio del cuadro morado */
+  align-items: center; /* Las alinea verticalmente si tienen distinta altura */
+  gap: 6px; /* Espacio de separación entre ambas fotos */
+  width: 100%; /* Ocupa todo el ancho del recuadro morado para poder centrar */
+  margin-top: 6px; /* Separación respecto al video de arriba */
+}
+
 
 	</style>	
 	</head>
@@ -142,18 +203,52 @@ color: #9C1F00;
 		<p style="text-align: center;">Hago arte por el camino</p>
 		 <p>Página web autogestionada por mí mismo con tutoriales de youtube, estoy aprendiendo a programar esta
 			cosa desde 0. <br> La usaré para subir arte, divulgación científica, divulgación no tan científica y lo que me parezca, o no, que merece ser compartido. <br>
-			Esto es un mecanismo para escapar de las garras de instagram que odia las imágenes con densidad de pixel.
+			Esto es un mecanismo para escapar de las garras de instagram que odia las imágenes con densidad de pixel.<br>
+			Por ahora no sé hacer más subpáginas dentro de esta web. Tiempo al tiempo.
 		 </p>
 		 </div>
 		 <div class="textocentralresaltado">
 		 <p>
-			Bienvenidas a todas las personas humanas y/o no humanas,<br> <span class="palabra-resaltada"><strong>WARNING</strong></span>: NO se requiere tener núcleo eucariota para acceder a esta página web. <br>Se permite el libre tránsito del ARNm
+			Bienvenidas a todas las personas humanas y/o no humanas.<br> <span class="palabra-resaltada"><strong>WARNING</strong></span>: NO se requiere tener núcleo eucariota para acceder a esta página web. <br>Se permite el libre tránsito del ARNm
 		 </p>
 		 </div>
-		 
-		<img src={`${import.meta.env.BASE_URL}imagenes/YnoVaNadie.jpg`} alt="Y si hacen una Guerra y no Va Nadie" class="foto-ynovanadie"/>
-	<div class="micólogo">
-	<img src={`${import.meta.env.BASE_URL}imagenes/micologo2.0.png`} alt="1" class="fotos2"/>
+		  <img src={`${import.meta.env.BASE_URL}imagenes/YnoVaNadie.jpg`} alt="Y si hacen una Guerra y no Va Nadie" class="foto-ynovanadie"/>
+
+<div class="contenedor-paralelo">
+	<div class="laurieanderson">
+		<p> 
+			<span class="palabra-resaltada2"><strong>Laurie Anderson</strong></span> <br><br>
+			<strong>Laurie Anderson</strong> (Glen Ellyn, Illinois, EEUU; 5 de junio de 1947, <strong>79 años</strong>) es una <strong>cantante, violinista, poeta, dibujante y artista experimental</strong>, combina música minimalista, diapositivas y reflexiones irónicas sobre el lenguaje, la política norteamericana, el rol de los sexos y la civilización occidental moderna en su conjunto de forma absolutamente trascendental.<br><br>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/CEHm9LK9vtU?si=QXf-SUIO9zZlESEo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			<div class="fila-imagenes">
+				<img src={`${import.meta.env.BASE_URL}imagenes/Laurie_anderson1.png`} alt="2" class="fotos-laurie-anderson"/>
+                <img src={`${import.meta.env.BASE_URL}imagenes/Laurie_anderson2.jpg`} alt="3" class="fotos-laurie-anderson"/> 
+			</div>
+		</p>
+	</div>
+
+	<div class="laurieanderson">
+		<p> 
+			<span class="palabra-resaltada2"><strong>Recomendación: ALBUM</strong></span><br><br>
+			<img src={`${import.meta.env.BASE_URL}imagenes/bigscience-album.png`} alt="2" class="fotos-laurie-anderson"/><br>
+			<strong>BIG SCIENCE</strong><br><br>
+			1 From the Air<br>
+			2 Big Science<br>
+			3 Sweaters<br>
+			4 Walking and Falling<br>
+			5 Born, Never Asked<br>
+			6 O Superman<br>
+			7 Example #22<br>
+			8 Let X=X<br>
+			9 It Tango<br>
+			10 Walking the Dog<br><br>
+			Me encantaría subir por aquí los archivos .mp3 pero el capitalismo culero y el copyright supuestamente no me dejan. A lo mejor algún día lo hago.
+		</p>
+	</div>
+</div>
+		
+	
+		<div class="micólogo">	<img src={`${import.meta.env.BASE_URL}imagenes/micologo2.0.png`} alt="1" class="fotos2"/>
 <img src={`${import.meta.env.BASE_URL}imagenes/micologo2mixto3.png`} alt="2" class="fotos2"/>
 <img src={`${import.meta.env.BASE_URL}imagenes/micologo2mixto2.png`} alt="3" class="fotos2"/>
 <img src={`${import.meta.env.BASE_URL}imagenes/micologo2mixto.png`} alt="4" class="fotos2"/>

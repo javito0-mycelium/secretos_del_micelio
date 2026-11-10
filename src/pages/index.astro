@@ -205,26 +205,6 @@ margin-left: 100px;
   width: 150px;         /* Ajusta este valor al tamaño que desees (puedes usar px, %, rem, etc.) */
   height: auto;         /* Mantiene la proporción original para que no se deforme */
 }
-@media (max-width: 768px) {
-    .mi-bloque-absoluto {
-        position: relative; /* Vuelve al flujo normal de la página */
-        top: auto;
-        left: auto;
-        width: 100%;        /* Ocupa todo el ancho disponible en móvil */
-        box-sizing: border-box;
-        margin-bottom: 20px;
-    }
-}
-.mi-bloque-absoluto {
-    position: absolute; 
-    top: 300px; 
-    left: 58px; /* O right: 60px si lo quieres a la derecha */
-    width: 170px; /* ¡Muy importante darle un ancho fijo o máximo para que no se estire de más! */
-    z-index: 100; 
-    background-color: #9ced70; 
-    border: 3px solid #852e71; 
-    padding: 10px;
-}
 	</style>	
 	</head>
 	<body >
@@ -250,7 +230,7 @@ margin-left: 100px;
 		 	</p>
 		</div>
 		 
-		<div class="mi-bloque-absoluto">
+		<div style="position: absolute; top: 300px; left: 60px; z-index: 100; background-color: #9ced70; border: 3px solid #852e71; padding: 10px;">
   			<img src={`${import.meta.env.BASE_URL}imagenes/Logo.png`} alt="2" class="logo-individual"/> 
 			<h3 style="color: #112c1d;">Enlaces guays</h3>
 			<a href="https://www.youtube.com/watch?v=QEG6gpOAkQg">Nidos de aves en directo</a><br>

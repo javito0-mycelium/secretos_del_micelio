@@ -90,6 +90,24 @@ body {
 	  height: auto; /* Mantiene la proporción de la imagen */
 	  display: block; /* Asegura que la imagen se comporte como un bloque */
 }
+.contenedor-paralelo {
+   justify-content: flex-start;
+	display: flex;
+  flex-direction: row; /* Coloca los hijos uno al lado del otro */
+  width: 100%;
+  align-items: flex-start; /* Alinea ambos arriba */
+  margin-top: 5px; /* Espacio respecto al cuadro amarillo */
+  gap: 5px;
+}
+.fila-imagenes {
+ display: flex;
+  flex-direction: row; /* Las coloca una al lado de la otra */
+  justify-content: center; /* Las centra juntas en medio del cuadro morado */
+  align-items: center; /* Las alinea verticalmente si tienen distinta altura */
+  gap: 6px; /* Espacio de separación entre ambas fotos */
+  width: 100%; /* Ocupa todo el ancho del recuadro morado para poder centrar */
+  margin-top: 6px; /* Separación respecto al video de arriba */
+}
 
 
 </style>	
@@ -101,9 +119,23 @@ body {
 	<div class="cuadro-h1-galeria">
 		<h1 style="color: #1a1800;">Galería</h1>
 	</div>
+	
+	<div class="cuadro-h2-galeria">
+		<h2 style="color: #BDAE17;">Buitre leonado maneja aires y sistemas</h2>
+	</div>
+	<div class="fila-imagenes">
+		<img src={`${import.meta.env.BASE_URL}imagenes/buitre1.jpg`} alt="1" class="fotos"/>
+		<img src={`${import.meta.env.BASE_URL}imagenes/buitre4.jpg`} alt="3" class="fotos"/>
+		<img src={`${import.meta.env.BASE_URL}imagenes/buitre2.jpg`} alt="3" class="fotos"/>
+		<img src={`${import.meta.env.BASE_URL}imagenes/buitre3.jpg`} alt="3" class="fotos"/>
+		
+	</div>
+
+
 	<div class="cuadro-h2-galeria">
 	<h2 style="color: #BDAE17;">El sol quemando el agua</h2>
 	</div>
+	
 	<div class="galeria-de-imagenes">
 	<img src={`${import.meta.env.BASE_URL}imagenes/oro.JPG`} alt="1" class="fotos"/>
 	<img src={`${import.meta.env.BASE_URL}imagenes/caballo.JPG`} alt="3" class="fotos"/>
@@ -116,6 +148,7 @@ body {
 	<h2 style="color: #BDAE17;">Cielo: y no pienso en nada</h2>
 </div>
 <iframe width="1002" height="562" src="https://www.youtube.com/embed/LMdmpPV6-S8?si=n86SM7oSiaJIazEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-	</body>
 	
+
+</body>
 </html>
